@@ -18,7 +18,6 @@ from dataset import Talk2Car
 from utils.util import AverageMeter, ProgressMeter, save_checkpoint
 
 from sentence_transformers import SentenceTransformer
-import models.resnet as resnet
 from efficientnet_pytorch import EfficientNet
 
 
@@ -74,12 +73,7 @@ def main():
     # Create model
     print("=> creating model")
     img_encoder = nn.DataParallel(EfficientNet.from_pretrained('efficientnet-b2'))
-    # img_encoder = nn.DataParallel(resnet.__dict__['resnet18'](pretrained=True))
-    text_encoder = SentenceTransformer('distilbert-base-nli-stsb-mean-tokens')
-    # fc_model = nn.Sequential(nn.Linear(768, 1536), nn.ReLU(), nn.Linear(1536,2048))
-    # fc_model = nn.Sequential(nn.Linear(1024, 1536), nn.ReLU(), nn.Linear(1536,2048))
-    # fc_model = nn.Sequential(nn.Linear(768, 640), nn.ReLU(), nn.Linear(640,512))
-    # fc_model = nn.Sequential(nn.Linear(1024, 768), nn.ReLU(), nn.Linear(768,512))
+    text_encoder = SentenceTransformer('roberta-large-nli-stsb-mean-tokens')
     fc_model = nn.Sequential(nn.Linear(1024, 1000), nn.ReLU(), nn.Linear(1000,1000))
 
     fc_model.to(device)
