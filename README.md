@@ -1,4 +1,4 @@
-#Cosine meets Softmax: A tough-to-beat baseline for visual grounding  
+# Cosine meets Softmax: A tough-to-beat baseline for visual grounding  
 This repository contains the source code of our solution which came in third in the [C4AV Challenge](https://www.aicrowd.com/challenges/eccv-2020-commands-4-autonomous-vehicles). A technical report detailing our solution can be found [here](our_paper).  
 
 ## Data
