@@ -46,13 +46,7 @@ def main():
     # Create model
     print("=> creating model")
     img_encoder = nn.DataParallel(EfficientNet.from_pretrained('efficientnet-b2'))
-    # img_encoder = nn.DataParallel(resnet.__dict__['resnet18'](pretrained=True))
     text_encoder = SentenceTransformer('roberta-large-nli-stsb-mean-tokens')
-    # text_encoder = SentenceTransformer('distilbert-base-nli-stsb-mean-tokens')
-    # fc_model = nn.Sequential(nn.Linear(768, 1536), nn.ReLU(), nn.Linear(1536,2048))
-    # fc_model = nn.Sequential(nn.Linear(768, 640), nn.ReLU(), nn.Linear(640,512))
-    # fc_model = nn.Sequential(nn.Linear(1024, 1536), nn.ReLU(), nn.Linear(1536,2048))
-    # fc_model = nn.Sequential(nn.Linear(1024, 768), nn.ReLU(), nn.Linear(768,512))
     fc_model = nn.Sequential(nn.Linear(1024, 1000), nn.ReLU(), nn.Linear(1000,1000))
 
     img_encoder.cuda()

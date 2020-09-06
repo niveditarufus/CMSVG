@@ -34,6 +34,12 @@ A submission file can be created by running the test.py script. The predictions.
 python3 test.py --root ./data
 ```
 
+See requirements.txt for a list of packages. Notice that you need to install the English language model for spacy by running the following command from within your environment.
+
+```
+python -m spacy download en_core_web_sm
+```
+
 Please cite the following if you find this repository helpful:
 
 ```
