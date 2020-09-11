@@ -39,8 +39,3 @@ See requirements.txt for a list of packages. Notice that you need to install the
 ```
 python -m spacy download en_core_web_sm
 ```
-
-Please cite the following if you find this repository helpful:
-
-
-```ours```
