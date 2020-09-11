@@ -42,28 +42,5 @@ python -m spacy download en_core_web_sm
 
 Please cite the following if you find this repository helpful:
 
-```
-@inproceedings{deruyttere2019talk2car,
-  title={Talk2Car: Taking Control of Your Self-Driving Car},
-  author={Deruyttere, Thierry and Vandenhende, Simon and Grujicic, Dusan and Van Gool, Luc and Moens, Marie Francine},
-  booktitle={Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)},
-  pages={2088--2098},
-  year={2019}
-}
-```
-
-```
-@inproceedings{reimers-2019-sentence-bert,
-    title = "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
-    author = "Reimers, Nils and Gurevych, Iryna",
-    booktitle = "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing",
-    month = "11",
-    year = "2019",
-    publisher = "Association for Computational Linguistics",
-    url = "http://arxiv.org/abs/1908.10084",
-}
-```
-
-```c4av```
 
 ```ours```
