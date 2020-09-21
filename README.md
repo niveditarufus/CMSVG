@@ -1,5 +1,5 @@
 # Cosine meets Softmax: A tough-to-beat baseline for visual grounding  
-This repository contains the source code of our solution which came in third in the [C4AV Challenge](https://www.aicrowd.com/challenges/eccv-2020-commands-4-autonomous-vehicles). A technical report detailing our solution can be found [here](our_paper).  
+This repository contains the source code of our solution which came in third in the [C4AV Challenge](https://www.aicrowd.com/challenges/eccv-2020-commands-4-autonomous-vehicles). A technical report detailing our solution can be found [here](https://arxiv.org/abs/2009.06066).  
 
 ## Data
 The images can be found [here](https://drive.google.com/open?id=1bhcdej7IFj5GqfvXGrHGPk2Knxe77pek). Unzip the images and copy them to the ./data folder. Notice that the ./data folder contains two separate json files. In one case, we list 64 possibly overlapping region proposals extracted by CenterNet. In the latter case, we removed duplicate proposals from the list.
