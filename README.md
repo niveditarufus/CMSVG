@@ -10,7 +10,7 @@ You can run the code as follows.
 python3 train.py --root ./data --lr 0.01 --nesterov --evaluate 
 ```
 
-The published code can be used to train a model that obtains +- 65.8% AP50 on the validation set. The training can be done on a system with 4 x 1080ti GPU in just a few hours. You can specify different versions for EfficientNet for the `img_encoder`, you will have to change the image dimensions accordingly in dataset.py. However, this will utilise more memory and longer training time for deeper models.(Best performance was obtained by EfficientNet b2)  
+The published code can be used to train a model that obtains +- 65.8% AP50 on the validation set. The training can be done on a system with 4 x 1080ti GPU in just a few hours. You can specify different versions for EfficientNet for the `img_encoder`, you will have to change the image dimensions accordingly(stated below) in dataset.py. However, this will utilise more memory and longer training time for deeper models.(Best performance was obtained by EfficientNet b2)  
 1. EfficientNet b0: 224
 2. EfficientNet b1: 240
 3. EfficientNet b2: 260
