@@ -39,3 +39,23 @@ See requirements.txt for a list of packages. Notice that you need to install the
 ```
 python -m spacy download en_core_web_sm
 ```
+If you find this work useful in your research work please cite :
+
+```
+@InProceedings{10.1007/978-3-030-66096-3_4,
+author="Rufus, Nivedita
+and Nair, Unni Krishnan R.
+and Krishna, K. Madhava
+and Gandhi, Vineet",
+editor="Bartoli, Adrien
+and Fusiello, Andrea",
+title="Cosine Meets Softmax: A Tough-to-beat Baseline for Visual Grounding",
+booktitle="Computer Vision -- ECCV 2020 Workshops",
+year="2020",
+publisher="Springer International Publishing",
+address="Cham",
+pages="39--50",
+abstract="In this paper, we present a simple baseline for visual grounding for autonomous driving which outperforms the state of the art methods, while retaining minimal design choices. Our framework minimizes the cross-entropy loss over the cosine distance between multiple image ROI features with a text embedding (representing the given sentence/phrase). We use pre-trained networks for obtaining the initial embeddings and learn a transformation layer on top of the text embedding. We perform experiments on the Talk2Car dataset and achieve 68.7{\%} AP50 accuracy, improving upon the previous state of the art by 8.6{\%}. Our investigation suggests reconsideration towards more approaches employing sophisticated attention mechanisms or multi-stage reasoning or complex metric learning loss functions by showing promise in simpler alternatives.",
+isbn="978-3-030-66096-3"
+}
+```
