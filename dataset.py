@@ -84,7 +84,7 @@ class Talk2Car(data.Dataset):
             valid = (bbox_lbrt[:,3] - bbox_lbrt[:,1] > 5) & (bbox_lbrt[:,2] - bbox_lbrt[:,0] > 5)
             
             # Store the region proposals together in one tensor by rescaling them to fixed size
-            rpn_image = torch.FloatTensor(self.num_rpns_per_image, 3, 260, 260).zero_()
+            rpn_image = torch.FloatTensor(self.num_rpns_per_image, 3, 224, 224).zero_()
             for i in range(self.num_rpns_per_image):
                 rpn_ = bbox_lbrt[i]
                 valid = (rpn_[3] - rpn_[1] > 5) & (rpn_[2] - rpn_[0] > 5)
